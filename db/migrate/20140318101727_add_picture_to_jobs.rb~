@@ -1,0 +1,5 @@
+class AddPictureToJobs < ActiveRecord::Migration
+  def change
+    add_column :job, :picture, :string
+  end
+end

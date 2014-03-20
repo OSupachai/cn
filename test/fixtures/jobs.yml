@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  company_name: MyString
+  province: MyString
+  position: MyString
+  numb: 1
+  qualification: MyString
+  start_date: 2014-02-20 14:43:09
+  deadline: 2014-02-20 14:43:09
+  link: MyString
+
+two:
+  company_name: MyString
+  province: MyString
+  position: MyString
+  numb: 1
+  qualification: MyString
+  start_date: 2014-02-20 14:43:09
+  deadline: 2014-02-20 14:43:09
+  link: MyString

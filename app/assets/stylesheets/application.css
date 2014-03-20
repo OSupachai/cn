@@ -1,0 +1,128 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@charset "utf-8";
+
+
+
+#head{
+background:url('images/h5.png') repeat-x;
+width:1280px;
+height:auto;
+margin: -10px 0px 0px -10px;
+}
+
+#footer{
+background:url('images/f1.png');
+height:40px;
+width:1280px;
+margin: -30px 0px -10px -10px;
+}
+#logo{
+background: url('images/lo2.png')no-repeat ;
+height: 180px;
+width: 200px;
+margin: 0px 0px 20px 30px;
+}
+
+#body{
+background: #eafc76; /* Old browsers */
+background: -moz-linear-gradient(top, #eafc76 0%, #fcfcf4 96%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eafc76), color-stop(96%,#fcfcf4)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #eafc76 0%,#fcfcf4 96%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #eafc76 0%,#fcfcf4 96%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #eafc76 0%,#fcfcf4 96%); /* IE10+ */
+background: linear-gradient(to bottom, #eafc76 0%,#fcfcf4 96%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eafc76', endColorstr='#fcfcf4',GradientType=0 ); /* IE6-9 */
+width: 1260px;
+height: auto;
+background-repeat: no-repeat;
+margin: -20px 0px 30px -10px;
+padding-left: 18px;
+font-family: Michroma;
+font-size: 100%;
+
+
+}
+
+
+#message{
+background: url('images/message7.png') center no-repeat ;
+height: 200px;
+width: 860px;
+margin: 0px 0px 0px 210px;
+}
+
+/* addition  */
+table#jobs {
+  background: #CCFFFF;
+  margin: 10px 0px  0px -15px;
+  border-collapse: collapse;
+  width: 101%;
+  border-bottom: 2px solid black;
+  color:black;
+ 
+
+}
+table#jobs th {
+  border: 2px solid white;
+  font-weight: bold;
+  background-color: #006666;
+  color:white;
+  
+}
+table#jobs th, table#jobs td {
+  border: 2px solid #76EEC6;
+  padding-left: 15px;
+  font-size: 18px;
+  text-align: left;
+}
+table#jobs th.hilite {
+  background-color: yellow;
+}
+h1#head_{
+  background-color: 570103;
+}
+
+table#user {
+  background: #CCFFCC;
+  margin: 10px 0px  0px 450px;
+  border-collapse: collapse;
+  width: 100%;
+  color:black;
+ 
+
+}
+table#user th {
+  border: 2px solid white;
+  font-weight: bold;
+  background-color: #006666;
+  color:white;
+  
+  
+}
+
+table#user th.hilite {
+  background-color: yellow;
+
+}
+body#user{
+ background-color: #CCFFCC;
+}
+h2{
+  border: 2px solid white;
+}
+
+
+

@@ -1,0 +1,67 @@
+
+%h1#head
+  %div#logo
+    %div#message
+    %div
+  %div
+
+
+#body 
+  %h1 Edit
+  %table
+    = form_tag monkey_path(@jobs), :method =>:put do
+      %tr
+        %td
+          = label :job, :company_name, 'Company name'
+        %td       
+          = text_field :jobs, 'company_name'
+      %tr
+        %td
+          = label :job, :province, 'Location'
+        %td
+          = text_field :jobs, 'province'
+      %tr
+        %td    
+          = label :job, :position, 'Position'
+        %td
+          = text_field :jobs, 'position'
+      %tr
+        %td 
+          = label :job, :qualification, 'Qualification'
+        %td
+          = text_field :jobs, 'qualification'
+      %tr
+        %td 
+          = label :job, :numb, 'Number of admission'
+        %td
+          = text_field :jobs, 'numb'
+      %tr
+        %td 
+          = label :job, :start_date, 'Start Date'
+        %td
+          = date_select :jobs, :start_date
+      %tr
+        %td
+          = label :job, :deadline, 'Deadline'
+        %td  
+          = date_select :jobs, :deadline
+      %tr
+        %td 
+          = label :job, :link, 'Link'
+        %td
+          = text_field :jobs ,'link'
+      %tr
+        %td
+          = label :job, :picture, 'Picture'
+        %td
+          = file_field :jobs, 'picture'
+      %tr
+        %td
+        %td
+          = submit_tag 'Save Changes'
+
+%h1
+
+%div#footer
+%div
+

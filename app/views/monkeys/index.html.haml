@@ -1,0 +1,47 @@
+%h1#head
+  %div#logo
+    %div#message
+    %div
+  %div
+%h1
+%h1#body
+
+  -if flash[:notice]
+    #notice.message= flash[:notice]
+
+  =button_to 'Login', monkeys_admin_path()
+  
+  = form_tag monkeys_path ,:method => :get, :id =>:location do
+    = label_tag :location,  "Search location"
+    = text_field_tag :location
+    = submit_tag("Search")    
+
+  %table#jobs
+    %tr
+      %th Company 
+      %th Detail
+      %th{:class => @deadline_header}= link_to 'Deadline', monkeys_path(:sort => 'deadline',:location => @search_location), :id => 'deadline_header'
+      %th Link  
+      
+    - @jobs.each do |job|
+      %tr
+        %td= job.company_name
+        %td
+          = job.position
+          %br
+          = job.numb 
+          %a position(s) 
+          %br
+          = job.province
+          %a
+          %br 
+          = button_to "moreinfo", monkey_path(job)
+        %td= job.deadline
+        %td= job.link
+          
+%h1
+
+%div#footer
+%div
+
+

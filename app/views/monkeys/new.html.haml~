@@ -1,0 +1,70 @@
+
+%h1#head
+  %div#logo
+    %div#message
+    %div
+  %div
+
+
+#body
+  %h1 New job 
+  %br
+  %table
+    = form_for(Job.new, :url => { :action => "create" },:html => {:multipart => true})   do |f|  
+      
+      %tr
+        %td
+          = f.label :company_name, "Company name"
+        %td
+          = f.text_field :company_name
+      %tr
+        %td
+          = f.label :province, "Location"
+        %td
+          = f.text_field :province
+      %tr
+        %td
+          = f.label :position, "Position"
+        %td
+          = f.text_field :position
+      %tr
+        %td
+          = f.label :qualification, "Qualification"
+        %td
+          = f.text_field :qualification
+      %tr
+        %td
+          = f.label :numb, "Number of admission"
+        %td
+          = f.text_field :numb
+      %tr
+        %td
+          = f.label :start_date
+        %td
+          = f.date_select :start_date
+      %tr
+        %td
+          = f.label :deadline
+        %td
+          = f.date_select :deadline
+      %tr
+        %td
+          = f.label :link , "Link"
+        %td
+          = f.text_field :link
+      %tr
+        %td
+          = f.label :picture
+        %td
+           = f.file_field :picture
+      %tr
+        %td
+        %td
+          = submit_tag 'Save Changes'
+ 
+
+%h1
+
+%div#footer
+%div
+

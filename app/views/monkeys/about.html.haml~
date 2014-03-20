@@ -1,0 +1,107 @@
+%h1 About
+#หมายเหตุ : ทำการอัพโหลดใหม่ตั้งแต่ต้น เนื่องจากไฟล์เดิม ไม่ได้ทำการติด tag
+
+%table#jobs
+  %thead
+    %tr
+      %th No.
+      %th Student ID
+      %th Name
+	
+     
+  %tbody
+    %tr
+      %td= "1"
+      %td= "5410450018"
+      %td= "Pramrudee Thongmuenglong"
+    %tr
+      %td= "2"
+      %td= "5410520166"
+      %td= "Supachai Onmasai"
+    %tr
+      %td= "3"
+      %td= "5410610736 "
+      %td= "Supatra Pothidet"
+    %tr
+      %td= "4"
+      %td= "5410610926"
+      %td= "Warakorn Plasuwan"
+    %tr
+      %td= "5"
+      %td= "5410611403"
+      %td= "Piradee Bunprasit"
+
+%h1
+%br
+%br
+%h1 Stakeholders
+
+=image_tag "stake.jpg"
+%br
+%br
+
+%h1 ER-diagram
+
+=image_tag "ER-diagram.jpg"
+%br
+%br
+
+%h1 Features
+Feature : Add a job 
+%br
+As a people want to share, 
+%br
+So that I can share a job with other users
+%br
+I want to add new job of company are open to internship to “Monkey Banana”.
+%br
+%br
+Feature :  Search a job
+%br
+As a user are looking for an internship
+%br
+So that I see information about the internship
+%br
+I want to search information about the internship which I interested then show to 
+“Monkey Banana”.
+%br
+%br
+Feature : Delete a job
+%br
+As a program
+%br
+So that I delete a job form “Monkey Banana”.
+%br
+I want to delete a job that closed off recruit form database.
+%br
+%br
+Feature : Edit a job
+%br
+As a people want to share
+%br
+So that I can show the correct information of job with other users
+%br
+I want to change job description of company are open to internship to 
+“Monkey Banana”.
+%br
+%br
+
+Feature : Sort a job
+%br
+As a user are looking for an internship
+%br
+So that I can see job which sort by date
+%br
+I want to sort a job by date then show to “Monkey Banana”.
+%br
+%br
+
+%br
+%br
+
+%h1 Lo-Fi & storyboard
+
+=image_tag "storyb.jpg"
+%br
+%br
+

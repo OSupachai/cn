@@ -1,0 +1,53 @@
+%h1#head
+  %div#logo
+    %div#message
+    %div
+  %div
+%h1
+%h1#body
+  =button_to 'Add new job', monkeys_new_path()
+ 
+  = form_tag monkeys_admin_path ,:method => :get, :id =>:location do
+    = label_tag :location,  "search location"
+    = text_field_tag :location
+    = submit_tag("Search") 
+
+
+  = form_tag monkeys_path, :method => :get, :id => 'jobs_form' do
+    = hidden_field_tag ":deadline", true if @deadline_header
+
+
+  %table#jobs
+    %tr
+      %th Company 
+      %th Detail
+      %th{:class => @deadline_header}= link_to 'Deadline', monkeys_admin_path(:sort => 'deadline',:location => @search_location), :id => 'deadline_header'
+      %th Edit
+      %th Delete
+  
+      
+    - @jobs.each do |job|
+      %tr
+        %td= job.company_name
+        %td
+          = job.position
+          %br
+          = job.numb 
+          %a position(s) 
+          %br
+          = job.province
+          %a
+          %br 
+          = button_to "more", monkey_path(job)
+        %td= job.deadline
+        %td= link_to "edit" ,edit_monkey_path(job.id), :method => :edit
+        %td= link_to "delete" ,monkey_path(job.id), :method => :delete, :confirm => 'Are you sure!'
+        
+        
+          
+%h1
+
+%div#footer
+%div
+
+

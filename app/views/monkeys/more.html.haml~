@@ -1,0 +1,43 @@
+
+%h1#head
+  %div#logo
+    %div#message
+    %div
+  %div
+
+
+#body 
+  %h1 More detail
+  %br
+
+  %br
+  = @jobs.company_name
+  %ul#details
+    %li
+      %tr
+        %td ตำแหน่งที่รับ :
+        %td= @jobs.position
+    %li
+      จำนวนที่รับ :
+      = @jobs.numb
+    %li
+      จังหวัด :
+      = @jobs.province
+    %li
+      คุณสมบัติ :
+      = @jobs.qualification
+    %li
+      วันเริ่มรับสมัคร :
+      = @jobs.start_date
+    %li
+      วันสิ้นสุดรับสมัคร :
+      = @jobs.deadline
+    %li
+      เว็บบริษัท:
+      %a{href: "http://#{@jobs.link}"} #{@jobs.link}
+ 
+
+%h1
+
+%div#footer
+%div
